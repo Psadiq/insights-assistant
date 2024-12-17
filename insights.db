@@ -1,0 +1,13 @@
+CREATE TABLE invoices (
+    id INTEGER PRIMARY KEY,
+    project_name TEXT,
+    invoice_number INTEGER,
+    vendor_name TEXT,
+    total_amount REAL,
+    balance REAL
+);
+
+INSERT INTO invoices (project_name, invoice_number, vendor_name, total_amount, balance)
+VALUES ('Project X', 123, 'Vendor A', 15000.50, 2000.75),
+       ('Project Y', 124, 'Vendor B', 20000.00, 3000.25),
+       ('Project X', 125, 'Vendor C', 25000.00, 5000.00);
